@@ -43,9 +43,9 @@ local function createGui(parent)
 	local TextButton6 = Instance.new("TextButton",Frame2)
 	TextButton6["TextColor3"] = Color3.new(0, 0, 0)
 	TextButton6["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton6["Text"] = "fake invent(resets)"
+	TextButton6["Text"] = "x2 life"
 	TextButton6["Font"] = Enum.Font.SourceSans
-	TextButton6["Name"] = "fake invent"
+	TextButton6["Name"] = "x2 life"
 	TextButton6["Position"] = UDim2.new(0.479999989, 0, 0.464776605, 0)
 	TextButton6["TextSize"] = 14
 	TextButton6["Size"] = UDim2.new(0, 130, 0, 50)
@@ -133,21 +133,31 @@ local function createGui(parent)
 	spawn(function() --Source for Script7
 		local script = Script7
 		script.Parent.Activated:Connect(function()
-			local DataBase, PlayerData = getrenv()._G.Database, getrenv()._G.PlayerData
+			local player = game.Players.LocalPlayer
 		
-			local newOwned = {}
+			if player.Character then
 		
-			for i,v in next, DataBase.Item do
-				newOwned[i] = math.random(WeaponOwnedRange.min, WeaponOwnedRange.max) -- newOwned[Weapon]: ItemCount
+				if player.Character:FindFirstChild("Humanoid") then
+		
+					player.Character.Humanoid.Name = "1"
+		
+				end
+		
+				local l = player.Character["1"]:Clone()
+		
+				l.Parent = player.Character
+		
+				l.Name = "Humanoid"; wait(0.1)
+		
+				player.Character["1"]:Destroy()
+		
+				workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+		
+				player.Character.Animate.Disabled = true; wait(0.1)
+		
+				player.Character.Animate.Disabled = false
+		
 			end
-		
-			local PlayerWeapons = PlayerData.Weapons
-		
-			game:GetService("RunService"):BindToRenderStep("InventoryUpdate", 0, function()
-				PlayerWeapons.Owned = newOwned
-			end)
-		
-			game.Players.LocalPlayer.Character.Humanoid.Health = 0
 		end)
 	end)
 	spawn(function() --Source for Script9
