@@ -1,246 +1,184 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-
--- Instances:
-
-local Converted = {
-	["_ScreenGui"] = Instance.new("ScreenGui");
-	["_Frame"] = Instance.new("Frame");
-	["_esp"] = Instance.new("TextButton");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_name"] = Instance.new("TextButton");
-	["_grab gun"] = Instance.new("TextButton");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_lobby tp"] = Instance.new("TextButton");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_get all emotes"] = Instance.new("TextButton");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_TextButton"] = Instance.new("TextButton");
-}
-
--- Properties:
-
-Converted["_ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_ScreenGui"].Parent = game:GetService("CoreGui")
-
-Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Frame"].BorderSizePixel = 0
-Converted["_Frame"].Position = UDim2.new(0.449152529, 0, 0.128395066, 0)
-Converted["_Frame"].Size = UDim2.new(0, 250, 0, 95)
-Converted["_Frame"].Parent = Converted["_ScreenGui"]
-
-Converted["_esp"].Font = Enum.Font.SourceSans
-Converted["_esp"].Text = "roles see"
-Converted["_esp"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_esp"].TextSize = 14
-Converted["_esp"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_esp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_esp"].BorderSizePixel = 0
-Converted["_esp"].Position = UDim2.new(0, 0, 0.454250306, 0)
-Converted["_esp"].Size = UDim2.new(0, 130, 0, 50)
-Converted["_esp"].Name = "esp"
-Converted["_esp"].Parent = Converted["_Frame"]
-
-Converted["_name"].Font = Enum.Font.LuckiestGuy
-Converted["_name"].Text = "FOGGYOUT LOL"
-Converted["_name"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_name"].TextSize = 14
-Converted["_name"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_name"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_name"].BorderSizePixel = 0
-Converted["_name"].Size = UDim2.new(0, 233, 0, 50)
-Converted["_name"].Name = "name"
-Converted["_name"].Parent = Converted["_Frame"]
-
-Converted["_grab gun"].Font = Enum.Font.SourceSans
-Converted["_grab gun"].Text = "grab gun"
-Converted["_grab gun"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_grab gun"].TextSize = 14
-Converted["_grab gun"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_grab gun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_grab gun"].BorderSizePixel = 0
-Converted["_grab gun"].Position = UDim2.new(0.479999989, 0, 0.464776605, 0)
-Converted["_grab gun"].Size = UDim2.new(0, 130, 0, 50)
-Converted["_grab gun"].Name = "grab gun"
-Converted["_grab gun"].Parent = Converted["_Frame"]
-
-Converted["_lobby tp"].Font = Enum.Font.SourceSans
-Converted["_lobby tp"].Text = "lobby tp"
-Converted["_lobby tp"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_lobby tp"].TextSize = 14
-Converted["_lobby tp"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_lobby tp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_lobby tp"].BorderSizePixel = 0
-Converted["_lobby tp"].Position = UDim2.new(0, 0, 0.970039785, 0)
-Converted["_lobby tp"].Size = UDim2.new(0, 120, 0, 50)
-Converted["_lobby tp"].Name = "lobby tp"
-Converted["_lobby tp"].Parent = Converted["_Frame"]
-
-Converted["_get all emotes"].Font = Enum.Font.SourceSans
-Converted["_get all emotes"].Text = "get all emotes"
-Converted["_get all emotes"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_get all emotes"].TextSize = 14
-Converted["_get all emotes"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_get all emotes"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_get all emotes"].BorderSizePixel = 0
-Converted["_get all emotes"].Position = UDim2.new(0.479999989, 0, 0.991092384, 0)
-Converted["_get all emotes"].Size = UDim2.new(0, 130, 0, 50)
-Converted["_get all emotes"].Name = "get all emotes"
-Converted["_get all emotes"].Parent = Converted["_Frame"]
-
-Converted["_TextButton"].Font = Enum.Font.SourceSans
-Converted["_TextButton"].Text = "toggle ui"
-Converted["_TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].TextSize = 14
-Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].BorderSizePixel = 0
-Converted["_TextButton"].Position = UDim2.new(0.0550847463, 0, 0.25555557, 0)
-Converted["_TextButton"].Size = UDim2.new(0, 66, 0, 29)
-Converted["_TextButton"].Parent = Converted["_ScreenGui"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
-
-
--- Fake Local Scripts:
-
-local function VQQWWP_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.esp.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_esp"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.Activated:Connect(function()
-		local function getRoleColor(plr)
-			if (plr.Backpack:FindFirstChild("Knife") or plr.Character:FindFirstChild("Knife")) then
-				return Color3.new(255, 0, 0)
-			elseif (plr.Backpack:FindFirstChild("Gun") or plr.Character:FindFirstChild("Gun")) then
-				return Color3.new(0, 0, 255)
-			else
-				return Color3.new(0, 255, 0)
-			end
-		end
-	
-		while true do
-			for _, v in pairs(game.Players:GetChildren()) do
-				if v ~= game.Players.LocalPlayer and v.Character and not v.Character:FindFirstChild("Highlight") then
-					Instance.new("Highlight", v.Character)
-					v.Character.Highlight.FillTransparency = 0.5
-					v.Character.Highlight.OutlineTransparency = 0.5
-					v.Character.Highlight.FillColor = getRoleColor(v)
-				elseif (v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Highlight")) then
-					v.Character.Highlight.FillColor = getRoleColor(v)
+local function createGui(parent)
+	--ScreenGui1--
+	local ScreenGui1 = Instance.new("ScreenGui",parent)
+	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+	----ScreenGui1----
+	--Frame2--
+	local Frame2 = Instance.new("Frame",ScreenGui1)
+	Frame2["Position"] = UDim2.new(0.449152529, 0, 0.128395066, 0)
+	Frame2["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame2["Size"] = UDim2.new(0, 250, 0, 95)
+	Frame2["BorderSizePixel"] = 0
+	Frame2["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----Frame2----
+	--TextButton3--
+	local TextButton3 = Instance.new("TextButton",Frame2)
+	TextButton3["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton3["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton3["Text"] = "roles see"
+	TextButton3["Font"] = Enum.Font.SourceSans
+	TextButton3["Name"] = "esp"
+	TextButton3["Position"] = UDim2.new(0, 0, 0.454250306, 0)
+	TextButton3["TextSize"] = 14
+	TextButton3["Size"] = UDim2.new(0, 130, 0, 50)
+	TextButton3["BorderSizePixel"] = 0
+	TextButton3["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton3----
+	--Script4--
+	local Script4 = Instance.new("Script",TextButton3)
+	----Script4----
+	--TextButton5--
+	local TextButton5 = Instance.new("TextButton",Frame2)
+	TextButton5["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton5["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton5["Text"] = "FOGGYOUT LOL"
+	TextButton5["Font"] = Enum.Font.LuckiestGuy
+	TextButton5["Name"] = "name"
+	TextButton5["TextSize"] = 14
+	TextButton5["Size"] = UDim2.new(0, 233, 0, 50)
+	TextButton5["BorderSizePixel"] = 0
+	TextButton5["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton5----
+	--TextButton6--
+	local TextButton6 = Instance.new("TextButton",Frame2)
+	TextButton6["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton6["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton6["Text"] = "fake invent(resets)"
+	TextButton6["Font"] = Enum.Font.SourceSans
+	TextButton6["Name"] = "fake invent"
+	TextButton6["Position"] = UDim2.new(0.479999989, 0, 0.464776605, 0)
+	TextButton6["TextSize"] = 14
+	TextButton6["Size"] = UDim2.new(0, 130, 0, 50)
+	TextButton6["BorderSizePixel"] = 0
+	TextButton6["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton6----
+	--Script7--
+	local Script7 = Instance.new("Script",TextButton6)
+	----Script7----
+	--TextButton8--
+	local TextButton8 = Instance.new("TextButton",Frame2)
+	TextButton8["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton8["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton8["Text"] = "lobby tp"
+	TextButton8["Font"] = Enum.Font.SourceSans
+	TextButton8["Name"] = "lobby tp"
+	TextButton8["Position"] = UDim2.new(0, 0, 0.970039785, 0)
+	TextButton8["TextSize"] = 14
+	TextButton8["Size"] = UDim2.new(0, 120, 0, 50)
+	TextButton8["BorderSizePixel"] = 0
+	TextButton8["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton8----
+	--Script9--
+	local Script9 = Instance.new("Script",TextButton8)
+	----Script9----
+	--TextButton10--
+	local TextButton10 = Instance.new("TextButton",Frame2)
+	TextButton10["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton10["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton10["Text"] = "get all emotes"
+	TextButton10["Font"] = Enum.Font.SourceSans
+	TextButton10["Name"] = "get all emotes"
+	TextButton10["Position"] = UDim2.new(0.479999989, 0, 0.991092384, 0)
+	TextButton10["TextSize"] = 14
+	TextButton10["Size"] = UDim2.new(0, 130, 0, 50)
+	TextButton10["BorderSizePixel"] = 0
+	TextButton10["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton10----
+	--Script11--
+	local Script11 = Instance.new("Script",TextButton10)
+	----Script11----
+	--Script12--
+	local Script12 = Instance.new("Script",ScreenGui1)
+	----Script12----
+	--TextButton13--
+	local TextButton13 = Instance.new("TextButton",ScreenGui1)
+	TextButton13["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton13["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton13["Text"] = "toggle ui"
+	TextButton13["Font"] = Enum.Font.SourceSans
+	TextButton13["Position"] = UDim2.new(0.0550847463, 0, 0.25555557, 0)
+	TextButton13["TextSize"] = 14
+	TextButton13["Size"] = UDim2.new(0, 66, 0, 29)
+	TextButton13["BorderSizePixel"] = 0
+	TextButton13["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton13----
+	spawn(function() --Source for Script4
+		local script = Script4
+		script.Parent.Activated:Connect(function()
+			local function getRoleColor(plr)
+				if (plr.Backpack:FindFirstChild("Knife") or plr.Character:FindFirstChild("Knife")) then
+					return Color3.new(255, 0, 0)
+				elseif (plr.Backpack:FindFirstChild("Gun") or plr.Character:FindFirstChild("Gun")) then
+					return Color3.new(0, 0, 255)
+				else
+					return Color3.new(0, 255, 0)
 				end
 			end
-			wait(0.1)
-		end
-	end)
-end
-local function ERFLVL_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.grab gun.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_grab gun"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.Activated:Connect(function()
-		local uis = game:GetService("UserInputService")
-		local sg = game:GetService("StarterGui")
-		local wp = game:GetService("Workspace")
-		local cmr = wp.Camera
-		local rs =  game:GetService("ReplicatedStorage")
-		local lgt = game:GetService("Lighting")
-		local plrs = game:GetService("Players")
-		local lplr = plrs.LocalPlayer
-		local bp = lplr:WaitForChild("Backpack")
-		local mouse = lplr:GetMouse()
-		if wp:FindFirstChild("GunDrop") then
-			wp.GunDrop.CFrame = lplr.Character.HumanoidRootPart.CFrame + Vector3.new(2,0,0)
-		end
-	end)
-end
-local function HTSYXB_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.lobby tp.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_lobby tp"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.Activated:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-99.99846649169922, 144.0962677001953, 8.487189292907715)
-	end)
-end
-local function KPHTLE_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.get all emotes.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_get all emotes"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.Activated:Connect(function()
-		local EmoteHandler;
-		for i,v in next, getgc(true) do
-			if typeof(v) == "table" and v["GeneratePage"] then
-				EmoteHandler = v
+		
+			while true do
+				for _, v in pairs(game.Players:GetChildren()) do
+					if v ~= game.Players.LocalPlayer and v.Character and not v.Character:FindFirstChild("Highlight") then
+						Instance.new("Highlight", v.Character)
+						v.Character.Highlight.FillTransparency = 0.5
+						v.Character.Highlight.OutlineTransparency = 0.5
+						v.Character.Highlight.FillColor = getRoleColor(v)
+					elseif (v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Highlight")) then
+						v.Character.Highlight.FillColor = getRoleColor(v)
+					end
+				end
+				wait(0.1)
 			end
-		end
-		local GUI = game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
-		local EmoteList = {"headless","zombie","zen","ninja","floss","dab"}
-		EmoteHandler.GeneratePage(EmoteList, GUI, "Unlocked Emotes")
+		end)
+	end)
+	spawn(function() --Source for Script7
+		local script = Script7
+		script.Parent.Activated:Connect(function()
+			local DataBase, PlayerData = getrenv()._G.Database, getrenv()._G.PlayerData
+		
+			local newOwned = {}
+		
+			for i,v in next, DataBase.Item do
+				newOwned[i] = math.random(WeaponOwnedRange.min, WeaponOwnedRange.max) -- newOwned[Weapon]: ItemCount
+			end
+		
+			local PlayerWeapons = PlayerData.Weapons
+		
+			game:GetService("RunService"):BindToRenderStep("InventoryUpdate", 0, function()
+				PlayerWeapons.Owned = newOwned
+			end)
+		
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		end)
+	end)
+	spawn(function() --Source for Script9
+		local script = Script9
+		script.Parent.Activated:Connect(function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-99.99846649169922, 144.0962677001953, 8.487189292907715)
+		end)
+	end)
+	spawn(function() --Source for Script11
+		local script = Script11
+		script.Parent.Activated:Connect(function()
+			local EmoteHandler;
+			for i,v in next, getgc(true) do
+				if typeof(v) == "table" and v["GeneratePage"] then
+					EmoteHandler = v
+				end
+			end
+			local GUI = game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
+			local EmoteList = {"headless","zombie","zen","ninja","floss","dab"}
+			EmoteHandler.GeneratePage(EmoteList, GUI, "Unlocked Emotes")
+		end)
+	end)
+	spawn(function() --Source for Script12
+		local script = Script12
+		local SGui = script.Parent
+		local Frame = SGui:WaitForChild("Frame")
+		local Button = SGui:WaitForChild("TextButton")
+		
+		Button.MouseButton1Up:Connect(function()
+			Frame.Visible = not Frame.Visible
+		end)
 	end)
 end
-local function LHAX_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ScreenGui"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local SGui = script.Parent
-	local Frame = SGui:WaitForChild("Frame")
-	local Button = SGui:WaitForChild("TextButton")
-	
-	Button.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
-end
-
-coroutine.wrap(VQQWWP_fake_script)()
-coroutine.wrap(ERFLVL_fake_script)()
-coroutine.wrap(HTSYXB_fake_script)()
-coroutine.wrap(KPHTLE_fake_script)()
-coroutine.wrap(LHAX_fake_script)()
+createGui(game.CoreGui) --coregui by default you should but change it
