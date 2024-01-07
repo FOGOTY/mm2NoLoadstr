@@ -87,21 +87,53 @@ local function createGui(parent)
 	--Script11--
 	local Script11 = Instance.new("Script",TextButton10)
 	----Script11----
-	--Script12--
-	local Script12 = Instance.new("Script",ScreenGui1)
-	----Script12----
-	--TextButton13--
-	local TextButton13 = Instance.new("TextButton",ScreenGui1)
-	TextButton13["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton13["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton13["Text"] = "toggle ui"
-	TextButton13["Font"] = Enum.Font.SourceSans
-	TextButton13["Position"] = UDim2.new(0.0550847463, 0, 0.25555557, 0)
-	TextButton13["TextSize"] = 14
-	TextButton13["Size"] = UDim2.new(0, 66, 0, 29)
-	TextButton13["BorderSizePixel"] = 0
-	TextButton13["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton13----
+	--TextButton12--
+	local TextButton12 = Instance.new("TextButton",Frame2)
+	TextButton12["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton12["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton12["Text"] = "speed x2"
+	TextButton12["Font"] = Enum.Font.SourceSans
+	TextButton12["Name"] = "speed x2"
+	TextButton12["Position"] = UDim2.new(0, 0, 1.49635553, 0)
+	TextButton12["TextSize"] = 14
+	TextButton12["Size"] = UDim2.new(0, 120, 0, 50)
+	TextButton12["BorderSizePixel"] = 0
+	TextButton12["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton12----
+	--Script13--
+	local Script13 = Instance.new("Script",TextButton12)
+	----Script13----
+	--TextButton14--
+	local TextButton14 = Instance.new("TextButton",Frame2)
+	TextButton14["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton14["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton14["Text"] = "some simple fly"
+	TextButton14["Font"] = Enum.Font.SourceSans
+	TextButton14["Name"] = "some simple fly"
+	TextButton14["Position"] = UDim2.new(0.479999989, 0, 1.49635553, 0)
+	TextButton14["TextSize"] = 14
+	TextButton14["Size"] = UDim2.new(0, 130, 0, 50)
+	TextButton14["BorderSizePixel"] = 0
+	TextButton14["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton14----
+	--Script15--
+	local Script15 = Instance.new("Script",TextButton14)
+	----Script15----
+	--Script16--
+	local Script16 = Instance.new("Script",ScreenGui1)
+	----Script16----
+	--TextButton17--
+	local TextButton17 = Instance.new("TextButton",ScreenGui1)
+	TextButton17["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton17["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton17["Text"] = "toggle ui"
+	TextButton17["Font"] = Enum.Font.SourceSans
+	TextButton17["Position"] = UDim2.new(0.0550847463, 0, 0.25555557, 0)
+	TextButton17["TextSize"] = 14
+	TextButton17["Size"] = UDim2.new(0, 66, 0, 29)
+	TextButton17["BorderSizePixel"] = 0
+	TextButton17["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextButton17----
 	spawn(function() --Source for Script4
 		local script = Script4
 		script.Parent.Activated:Connect(function()
@@ -180,8 +212,29 @@ local function createGui(parent)
 			EmoteHandler.GeneratePage(EmoteList, GUI, "Unlocked Emotes")
 		end)
 	end)
-	spawn(function() --Source for Script12
-		local script = Script12
+	spawn(function() --Source for Script13
+		local script = Script13
+		script.Parent.Activated:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+		end)
+	end)
+	spawn(function() --Source for Script15
+		local script = Script15
+		script.Parent.Activated:Connect(function()
+			local User = game:GetService("UserInputService")
+			local player = game:GetService("Players").LocalPlayer
+			local GuiService = game:GetService("StarterGui")
+			local mouse = game.Players.LocalPlayer:GetMouse()
+			local brick = Instance.new("Part", workspace)
+			brick.Size = Vector3.new(30, 30, 30)
+			brick.CFrame = player.Character.HumanoidRootPart.CFrame + Vector3.new(0, -4, 0)
+			brick.Transparency = 1
+			brick.Anchored = true
+			brick.Name = "Brick"
+		end)
+	end)
+	spawn(function() --Source for Script16
+		local script = Script16
 		local SGui = script.Parent
 		local Frame = SGui:WaitForChild("Frame")
 		local Button = SGui:WaitForChild("TextButton")
